@@ -1,0 +1,26 @@
+{
+  "name": "cjrasmussen/data-cache-handler",
+  "description": "Simple helper for caching data",
+  "version": "1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Clark Rasmussen",
+      "homepage": "https://cjr.dev",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/cjrasmussen/DataCacheHandler/issues",
+    "source": "https://github.com/cjrasmussen/DataCacheHandler"
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "cjrasmussen\\DataCacheHandler\\": "src/"
+    }
+  }
+}
