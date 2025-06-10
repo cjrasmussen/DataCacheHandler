@@ -8,7 +8,7 @@ use RuntimeException;
 class DataCacheHandler
 {
 	private string $cacheDirPath;
-	private string $cacheFilePath;
+	private ?string $cacheFilePath = null;
 
 	public function __construct(string $cache_dir_path)
 	{
@@ -39,6 +39,16 @@ class DataCacheHandler
 		}
 
 		return $this;
+	}
+
+	/**
+	 * Get the path to the cache file for the initialized instance
+	 *
+	 * @return string|null
+	 */
+	public function getCacheFilePath(): ?string
+	{
+		return $this->cacheFilePath;
 	}
 
 	/**
